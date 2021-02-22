@@ -4,11 +4,11 @@ const morgan = require('morgan');
 const path = require('path');
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, '../client/dist/index.html')));
+app.use('/', express.static(path.join(__dirname, '../client/dist')));
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get('/data', (req, res) => {
   res.json({name: 'jin'})
 })
 

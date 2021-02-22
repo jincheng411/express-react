@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
+import Input from './components/Input.jsx'
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {},
+    }
+  }
   render() {
     return (
       <div>
-        <h1>Hello World</h1>
+        {/* <Input /> */}
+        <h2>aaa</h2>
       </div>
     )
   }
